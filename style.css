@@ -199,40 +199,40 @@
    }
    
    .icon_pizza {
-      background: url(/img/icon_pizza.png) no-repeat;
+      background: url('./img/icon_pizza.png') no-repeat;
    }
    .icon_pizza:hover{
-      background: url(/img/icon_o_pizza.png) no-repeat;
+      background: url(./img/icon_o_pizza.png) no-repeat;
    }
    .icon_pasta {
-      background: url(/img/icon_pasta.png) no-repeat;
+      background: url(./img/icon_pasta.png) no-repeat;
    }
    .icon_pasta:hover {
-      background: url(/img/icon_o_pasta.png) no-repeat;
+      background: url(./img/icon_o_pasta.png) no-repeat;
    }
    .icon_burger {
-      background: url(/img/icon_burger.png) no-repeat;
+      background: url(./img/icon_burger.png) no-repeat;
    }
    .icon_burger:hover {
-      background: url(/img/icon_o_burger.png) no-repeat;
+      background: url(./img/icon_o_burger.png) no-repeat;
    }
    .icon_drink {
-      background: url(/img/icon_drink.png) no-repeat;
+      background: url(./img/icon_drink.png) no-repeat;
    }
    .icon_drink:hover {
-      background: url(/img/icon_o_drink.png) no-repeat;
+      background: url(./img/icon_o_drink.png) no-repeat;
    }
    .icon_nachos {
-      background: url(/img/icon_nachos.png) no-repeat;
+      background: url(./img/icon_nachos.png) no-repeat;
    }
    .icon_nachos:hover {
-      background: url(/img/icon_o_sneck.png) no-repeat;
+      background: url(./img/icon_o_sneck.png) no-repeat;
    }
    .icon_souce {
-      background: url(/img/icon_souce.png) no-repeat;
+      background: url(./img/icon_souce.png) no-repeat;
    }
    .icon_souce:hover {
-      background: url(/img/icon_o_souce.png) no-repeat;
+      background: url(./img/icon_o_souce.png) no-repeat;
    }
    .icon_title{
       padding-left: 46px;
