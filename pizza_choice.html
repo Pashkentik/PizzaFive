@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+   <meta content="text/html" charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pizza Five</title>
+   <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="body_header">
+         <div class="background_container">
+         </div>
+         
+         <div class="_container">
+            <div class="header_container">
+               <a href="./index.html" class="main_link">
+                  <img class="header_logo" src="./img/Ресурс 9@4x 1.png" alt="Pizza Five logo">
+               </a>
+               <div class="header_menu">
+                  <nav class="header_nav">
+                     <a href="./index.html" class="header_nav_link">Головна</a>
+                     <div class="dropdown">
+                        <a href="#" onclick="myFunction()" class="header_nav_link dropdown">Меню</a>
+                        <div class="dropdown_content" id="dropdown">
+                           <a href="./pizza_choice.html" class="dropdown_content_link icon_pizza">
+                              <h5 class="icon_title">Піцца</h5>
+                           </a>
+                           <a href="./pasta_choice.html" class="dropdown_content_link icon_pasta">
+                              <h5 class="icon_title">Паста</h5>
+                           </a>
+                           <a href="./pasta_choice.html" class="dropdown_content_link icon_burger">
+                              <h5 class="icon_title">Бургер сети</h5>
+                           </a>
+                           <a href="./drinks_choice.html" class="dropdown_content_link icon_drink">
+                              <h5 class="icon_title">Напої</h5>
+                           </a>
+                           <a href="./sneck_choice.html" class="dropdown_content_link icon_nachos">
+                              <h5 class="icon_title">Снеки</h5>
+                           </a>
+                           <a href="./sauce_choice.html" class="dropdown_content_link icon_souce">
+                              <h5 class="icon_title">Соуси</h5>
+                           </a>
+                        </div>
+                     </div>
+                     <a href="./index.html#body_delivery" id="delivery" class="header_nav_link">Доставка та оплата</a>
+                     <a href="./index.html#contacts" class="header_nav_link">Контакти</a>
+                  </nav>
+                  <hr class="header_line">
+                  <div class="header_contact">
+                     <p class="header_contact_line">Ми працюємо для Вас з <span class="thin_numbers">9</span> до <span
+                           class="thin_numbers">20</span> години </p>
+                     <p class="header_contact_line">Телефон: <span class="thin_numbers"><a href="tel:+380953438657">+38 (095) 343 86 57;</a> <a href="tel:+380680920649">+38 (068) 092
+                           06 49</a></span></p>
+                  </div>
+               </div>
+               <a href="#" class="header_shop_button">
+                  <img class="shop_button_img" src="./img/shopping-bag 1.png" alt="shopping bag">
+                  <h3 class="shop_count">(0)</h3>
+               </a>
+            </div>
+         </div>
+      </header>
+      <main>
+         <div class="_item_container">
+            <div class="items_card_group">
+               <div class="item_card">
+                  <div class="item_card_group">
+                  <img class="item_card_img" src="./img/pizza1.png" alt="pizza">
+                     <div class="item_card_text">
+                        <div class="item_card_title_price">
+                           <p class="item_card_title">Маргарита</p>
+                           <p class="item_card_price">470г / 90 грн.</p>
+                        </div>
+                        <p class="item_card_ingrd">(соус неаполітано, моцарелла,<br>
+                           помідори, орегано)</p>
+                     </div>
+                  </div>
+                     <a class="buy_button_ogange" href="#popup_pizza">Замовити</a>
+               </div>
+               <div class="item_card">
+                  <div class="item_card_group">
+                     <img class="item_card_img" src="./img/pizza2.png" alt="pizza">
+                     <div class="item_card_text">
+                        <div class="item_card_title_price">
+                           <p class="item_card_title">Неаполітано</p>
+                           <p class="item_card_price">570г / 150 грн.</p>
+                        </div>
+                        <p class="item_card_ingrd">(соус неаполітано, моцарелла, помідор, печериці,
+                           куряче філе, шинка, маслини, орегано)</p>
+                     </div>
+                  </div>
+                     <a class="buy_button_ogange" href="#popup_pizza">Замовити</a>
+               </div>
+               <div class="item_card">
+                  
+                  <div class="item_card_group">
+                     <img class="item_card_img" src="./img/pizza3.png" alt="pizza">
+                     <div class="item_card_text">
+                        <div class="item_card_title_price">
+                           <p class="item_card_title">Палєрмо</p>
+                           <p class="item_card_price">560г / 125 грн.</p>
+                        </div>
+                        <p class="item_card_ingrd">(соус вершковий, моцарелла, помідор, печериці, 
+                           бекон, шинка, орегано)</p>
+                     </div>
+                     
+                  </div>
+                  <a class="buy_button_ogange" href="#popup_pizza">Замовити</a>
+               </div>
+               <div class="item_card">
+                  
+                  <div class="item_card_group">
+                     <img class="item_card_img" src="./img/pizza4.png" alt="pizza">
+                     <div class="item_card_text">
+                        <div class="item_card_title_price">
+                           <p class="item_card_title">Пеппероні</p>
+                           <p class="item_card_price">480г / 100 грн.</p>
+                        </div>
+                        <p class="item_card_ingrd">(соус неаполітано, моцарелла, пеппероні, 
+                           чілі, орегано)</p>
+                     </div>
+                     
+                  </div>
+                  <a class="buy_button_ogange" href="#popup_pizza">Замовити</a>
+               </div>
+               <div class="item_card">
+                  
+                  <div class="item_card_group">
+                     <img class="item_card_img" src="./img/pizza5.png" alt="pizza">
+                     <div class="item_card_text">
+                        <div class="item_card_title_price">
+                           <p class="item_card_title">Вітелло</p>
+                           <p class="item_card_price">590г / 130 грн.</p>
+                        </div>
+                        <p class="item_card_ingrd">(соус неаполітано, моцарелла, помідор, яловичина,
+                           болгарський перець, Дор Блю, орегано)</p>
+                     </div>
+                     
+                  </div>
+                  <a class="buy_button_ogange" href="#popup_pizza">Замовити</a>
+               </div>
+               <div class="item_card">
+                  
+                  <div class="item_card_group">
+                     <img class="item_card_img" src="./img/pizza6.png" alt="pizza">
+                     <div class="item_card_text">
+                        <div class="item_card_title_price">
+                           <p class="item_card_title">Квадро Формаджі</p>
+                           <p class="item_card_price">560г / 140 грн.</p>
+                        </div>
+                        <p class="item_card_ingrd">(соус вершковий, моцарелла, гауда, Дор Блю, 
+                           гарана падана, груша, орегано)</p>
+                     </div>
+                    
+                  </div>
+                  <a class="buy_button_ogange" href="#popup_pizza">Замовити</a>
+               </div>
+               <div class="item_card">
+                  
+                  <div class="item_card_group">
+                     <img class="item_card_img" src="./img/pizza7.png" alt="pizza">
+                     <div class="item_card_text">
+                        <div class="item_card_title_price">
+                           <p class="item_card_title">Баварська</p>
+                           <p class="item_card_price">550г / 110 грн.</p>
+                        </div>
+                        <p class="item_card_ingrd">(соус неаполітано, моцарелла, помідор, колбаски,
+                           корнішони, цибуля маринована, орегано)</p>
+                     </div>
+                     
+                  </div>
+                  <a class="buy_button_ogange" href="#popup_pizza">Замовити</a>
+               </div>
+               <div class="item_card">
+                  
+                  <div class="item_card_group">
+                     <img class="item_card_img" src="./img/pizza8.png" alt="pizza">
+                     <div class="item_card_text">
+                        <div class="item_card_title_price">
+                           <p class="item_card_title">Мафія</p>
+                           <p class="item_card_price">600г / 130 грн.</p>
+                        </div>
+                        <p class="item_card_ingrd">(соус неаполітано, моцарелла, помідор, яловичина,
+                           куряче філе, шинка, цибуля маринована, орегано)</p>
+                     </div>
+                     
+                  </div>
+                  <a class="buy_button_ogange" href="#popup_pizza">Замовити</a>
+               </div>
+            </div>
+         </div>
+      </main>
+         <footer class="body_footer">
+            <div class="_container">
+               <div class="footer_contact">
+                  <h2 class="footer_contact_line">Ми працюємо для Вас з 9 до 20 години </h2>
+                  <h2 class="footer_contact_line">Телефон: +38 (095) 343 86 57; +38 (068) 092 06 49</h2>
+               </div>
+               <div class="footer_imgs">
+                  <div class="footer_contact_social">
+                     <a class="footer_link_img" href="https://www.instagram.com/pashkentik/"><img
+                           class="footer_contact_social_img" src="./img/social2_2.png" alt="instagram page"></a>
+                     <a class="footer_link_img" href="https://www.facebook.com"><img class="footer_contact_social_img"
+                           src="./img/social2_3.png" alt="facebook page"></a>
+                     <a class="footer_link_img" href="https://t.me/pashkentosik"><img class="footer_contact_social_img"
+                           src="./img/social3_3.png" alt="telegram page"></a>
+                  </div>
+                  <a href="https://pay.google.com/"><img class="google_pay" src="./img/pay1.png" alt=""></a>
+                  <a href="https://www.mastercard.ua/" class="master_card"><img src="./img/pay2.png" alt=""></a>
+                  <a href="https://www.visa.com.ua/" class="visa"><img src="./img/pay3.png" alt=""></a>
+               </div>
+            </div>
+         </footer>
+         <div id="popup_pizza" class="popup_pizza">
+            <a class="popup_area" href="#popup_close"></a>
+            <div class="popup_body">
+               <div class="popup_content">
+                  <div class="count_item_group">
+                     <div class="item_card_group item_card_group_popup">
+                        <img class="item_card_img_popup" src="./img/pizza5.png" alt="pizza">
+                           <div class="item_card_text">
+                              <div class="item_card_title_price">
+                                 <p class="item_card_title">Вітелло</p>
+                                 <p class="item_card_price">470г / 90 грн.</p>
+                              </div>
+                              <p class="item_card_ingrd">(соус неаполітано, моцарелла, помідор, яловичина,
+                                 болгарський перець, Дор Блю, орегано)</p>
+                           </div>
+                           <div class="popup_count">
+                              <p class="item_card_title">Кількість</p>
+                              <div class="popup_buttons_count">
+                                 <a class="popup_count_button"></a>
+                                 <p class="popup_count_number">0</p>
+                                 <a class="popup_count_button_plus"></a>
+                              </div>
+                           </div>
+                     </div>
+                  </div>
+                  <div class="adds_buy">
+                     <a href="#popup_close" class="close_btn"></a>
+                     <div class="white_addons_pizza_group">
+                        <div class="popup_count_white">
+                           <p class="item_card_title">Сирний борт</p>
+                           <div class="popup_buttons_count">
+                              <a class="popup_count_button"></a>
+                              <p class="popup_count_number">0</p>
+                              <a class="popup_count_button_plus"></a>
+                           </div>
+                        </div>
+                        <a class="add_addons_pizza popup_count_white">Додати в піцу</a>
+                        <div class="addons_white">
+                           <a class="addon_white_item_card"><img class="white_addon_img" src="./img/addon1.png" alt="mozarella"><p class="white_addon_title">Моцарелла</p></a>
+                           <a class="addon_white_item_card"><img class="white_addon_img" src="./img/addon2.png" alt="cheese"><p class="white_addon_title">Пармезан</p></a>
+                           <a class="addon_white_item_card"><img class="white_addon_img" src="./img/addon3.png" alt="chiken meat"><p class="white_addon_title">Куряче філе</p></a>
+                           <a class="addon_white_item_card"><img class="white_addon_img" src="./img/addon4.png" alt="tomato"><p class="white_addon_title">Помідори</p></a>
+                           <a class="addon_white_item_card"><img class="white_addon_img" src="./img/addon5.png" alt="mushroms"><p class="white_addon_title">Печериці</p></a>
+                           <a class="addon_white_item_card"><img class="white_addon_img" src="./img/addon6.png" alt="onion"><p class="white_addon_title">Цибуля</p></a>
+                        </div>
+                        <p class="inged_count">Інгредієнти: (0)</p>
+                     </div>
+                  </div>
+                  <button class="add_to_buy white_hower_btns">Додати до кошика (0грн)</button>
+               </div>
+            </div>
+         </div>
+         <div id="popup_close" class="popup_close_scroll"></div>
+   </div>
+   <script src="./js.js"></script>
+</body>
+
+</html>
