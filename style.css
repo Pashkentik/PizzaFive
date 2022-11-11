@@ -716,6 +716,22 @@
       flex-wrap: wrap;
       align-content: space-between;
    }
+   .popup_content_bag{
+      background: #F3DDD4;
+      border-radius: 24px;
+      z-index: 10;
+      overflow: hidden;
+      width: 700px;
+      max-height: 830px;
+      margin: 0 10px;
+      position: relative;
+      padding: 24px 33px 28px 56px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: space-between;
+      gap: 16px
+   }
    .popup_pizza{
       position: fixed;
       height: 100%;
@@ -927,6 +943,8 @@
          align-self: flex-end;
          min-width: 62px;
          min-height: 40px;
+         width: 62px;
+         height: 40px;
          left: 1364px;
          top: 24px;
          border: 2px solid #FF5722;
@@ -945,4 +963,69 @@
          background: url('./img/close_btn_white.png') no-repeat center;
          box-shadow: none;
          background-color: #FFCCBC;
+      }
+      .bag_group_items{
+         display: flex;
+         justify-content: space-between;
+         width: 100%;
+      }
+      .items_grop_in_bag{
+         height: 644px;
+         width: 422px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+      }
+      .bag_group_items .close_btn{
+         align-self: flex-start;
+      }
+      .count_item_group .add_to_buy {
+         box-shadow: 0px 4px 16px #FF5722;
+         border-radius: 16px;
+         width: 590px;
+         height: 51px;
+         padding: 3px 20px;
+         font-weight: 600;
+         font-size: 24px;
+         line-height: 45px;
+      }
+      .count_item_group div {
+         display: flex;
+         font-weight: 600;
+         font-size: 24px;
+         line-height: 45px;
+         gap: 40px;
+         justify-content: flex-end;
+         padding: 0 10px 0 0;
+      }
+      .count_item_group{
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+      }
+      .items_grop_in_bag > div {
+         width: 422px;
+         height: 146px;
+         display: flex;
+         gap: 22px;
+      }
+      .items_grop_in_bag img {
+         width: 146px;
+         height: 146px;
+         border: 3px solid #FF5722;
+         filter: drop-shadow(0px 4px 4px rgba(255, 87, 34, 0.55));
+         border-radius: 16px;
+      }
+      .item_count_name_bag p {
+         font-weight: 600;
+         font-size: 20px;
+         line-height: 28px;
+      }
+      .item_count_name_bag{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+      }
+      .item_count_name_bag .popup_buttons_count{
+         justify-self: end;
       }
