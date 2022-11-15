@@ -486,6 +486,15 @@
    width: 54px;
    height: 54px;
   }
+  ._first_img:hover{
+   content:url(./img/social1_1.png)
+  }
+  ._second_img:hover{
+   content:url(./img/social2_1.png)
+  }
+  ._third_img:hover{
+   content:url(./img/social3_1.png);
+  }
   .body_contact_social{
    margin-left: 796px;
    margin-top: 22px;
