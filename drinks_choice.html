@@ -74,7 +74,7 @@
                            <p class="item_card_title">Лимонад</p>
                         </div>
                   </div>
-                     <a class="buy_button_ogange" href="">Замовити</a>
+                     <a class="buy_button_ogange" href="#popup_drinks">Замовити</a>
                </div>
                <div class="item_card_sneck">
                   <div class="item_card_group _sneck">
@@ -83,7 +83,7 @@
                            <p class="item_card_title">Вишневий сік</p>
                         </div>
                   </div>
-                     <a class="buy_button_ogange" href="">Замовити</a>
+                     <a class="buy_button_ogange" href="#popup_drinks">Замовити</a>
                </div>
                <div class="item_card_sneck">
                   <div class="item_card_group _sneck">
@@ -92,7 +92,7 @@
                            <p class="item_card_title">Вода</p>
                         </div>
                   </div>
-                     <a class="buy_button_ogange" href="">Замовити</a>
+                     <a class="buy_button_ogange" href="#popup_drinks">Замовити</a>
                </div>
                <div class="item_card_sneck">
                   <div class="item_card_group _sneck">
@@ -101,7 +101,7 @@
                            <p class="item_card_title">Pepsi</p>
                         </div>
                   </div>
-                     <a class="buy_button_ogange" href="">Замовити</a>
+                     <a class="buy_button_ogange" href="#popup_drinks">Замовити</a>
                </div>
             </div>
          </div>
@@ -201,26 +201,116 @@
                         <p>Доставка <span class="thin_numbers">50</span> грн.</p>
                         <p>Всього: <span class="thin_numbers">610 </span>грн</p>
                      </div>
-                     <button class="add_to_buy white_hower_btns">Оформити замовлення</button>
+                     <a href="#popup_payment" class="add_to_buy white_hower_btns">Оформити замовлення</a>
                   </div>
                </div>
             </div>
          </div>
-         <div id="popup_pizza" class="popup_pizza">
+         <div id="popup_drinks" class="popup_pizza">
             <a class="popup_area" href="#popup_close"></a>
             <div class="popup_body">
-                  <div class="popup_content">
-                     <h3 class="popup_title">Зворотній зв'язок</h3>
-                     <form class="popup_input" action="#popup_success">
-                        <input class="popup_input_field" type="text" placeholder="Ваше ім'я" required>
-                        <input class="popup_input_field" type="tel" placeholder="Телефон" required>
-                        <input class="popup_input_field" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                           required placeholder="Емейл">
-                        <input type="submit" class="popup_input_button" value="Надіслати">
-                     </form>
+               <div class="popup_content">
+                  <div class="count_item_group">
+                     <div class="item_card_group item_card_group_popup">
+                        <img class="item_card_img_popup" src="./img/drink2.png" alt="burger set">
+                           <div class="item_card_text">
+                              <div class="item_card_title_price">
+                                 <p class="item_card_title">Вишневий сік</p>
+                                 <p class="item_card_price"></p>
+                              </div>
+                              <p class="item_card_ingrd_popup"></p>
+                           </div>
+
+                     </div>
+                  </div>
+                  <div class="adds_buy _drinks">
+                     <a href="#popup_close" class="close_btn"></a>
+                     <div class="white_addons_pizza_group_drinks">
+                        <div class="drink_group">
+                           <a class="popup_count_drink">0.5 мл / 25 грн</a>
+                           <div class="popup_buttons_count">
+                              <a class="popup_count_button"></a>
+                              <p class="popup_count_number">0</p>
+                              <a class="popup_count_button_plus"></a>
+                           </div>
+                        </div>
+                        <div class="drink_group">
+                           <a class="popup_count_drink"> 1 л / 45 грн</a>
+                           <div class="popup_buttons_count">
+                              <a class="popup_count_button"></a>
+                              <p class="popup_count_number">0</p>
+                              <a class="popup_count_button_plus"></a>
+                           </div>
+                        </div>
+                        <div class="drink_group">
+                           <a class="popup_count_drink">2 л / 65 грн</a>
+                           <div class="popup_buttons_count">
+                              <a class="popup_count_button"></a>
+                              <p class="popup_count_number">0</p>
+                              <a class="popup_count_button_plus"></a>
+                           </div>
+                        </div>
+                        
+                     <p class="inged_count">Інгредієнти: (0)</p>
+                  </div>
                </div>
+               <a href="#popup_shopping_bag" class="add_to_buy white_hower_btns">Додати до кошика (0грн)</a>
             </div>
          </div>
+   </div>
+   <div id="popup_payment" class="popup_pizza">
+      <a class="popup_area" href="#popup_close"></a>
+      <div class="popup_body">
+         <div class="popup_content_payment">
+            <div class="bag_group_items">
+               <div class="popup_payment_title">
+                  <p>Данні для замовлення</p>
+                  <a href="#popup_close" class="close_btn"></a>
+               </div>
+               <form class="items_grop_in_payment">
+                  <div class="name_phone_pay">
+                     <input type="text" name="" id="" placeholder="Ім’я">
+                     <input type="tel" placeholder="Тел. +38 0 (...) ... .. ..">
+                  </div>
+                  <input type="text" placeholder="Вул.">
+                 <div class="four_group_payment">
+                     <input type="text" placeholder="Буд.">
+                     <input type="text" placeholder="Кв.">
+                     <input type="text" placeholder="Під’їзд">
+                     <input type="text" placeholder="Поверх">
+                 </div>
+                 <div class="comment_pay_group">
+                    <input type="text" placeholder="Кількість приборів">
+                    <input type="text" placeholder="Коментар">
+                 </div>
+                 <div class="payment_payment">
+                  <p>Оберіть спосіб оплати</p>
+                  <div>
+                     <label for="cash_payment" class="payment_checked_btn">Готівкою</label>
+                     <label for= "therminal"  class="payment_checked_btn">Термінал</label>
+                     <label for="online_payment" class="payment_checked_btn">On-line оплата</label>
+                  </div>
+                  </div>
+                  <form>
+                  <input type="radio" checked name="radio" id="cash_payment">
+                  <input type="radio"  name="radio" id="therminal">
+                  <input type="radio"  name="radio" id="online_payment">
+                  <input class="cash_return" type="text" placeholder="Залишок з якої сумми">
+                  <div class="online_payment">
+                     <a href="" class="online_payment_btn">On-line оплата</a>
+                     <div class="online_payment_imgs">
+                        <img src="/img/pay1.png" alt="" class="online_payment_var">
+                        <img src="/img/pay2_1.png" alt="" class="online_payment_var">
+                        <img src="/img/pay3.png" alt="" class="online_payment_var">
+                     </div>
+                  </div>
+                  </form>
+               </form>  
+            </div>
+            <a href="./payment_success.html" class="add_to_buy white_hower_btns">Підтвердити замовлення</a>
+         </div>
+      </div>
+   </div>
          <div id="popup_close" class="popup_close_scroll"></div>
    </div>
    <script src="./js.js"></script>
