@@ -4,6 +4,10 @@ toggle between hiding and showing the dropdown content */
 function myFunction() {
   document.getElementById("dropdown").classList.toggle("show");
 }
+function menuMobile() {
+  document.getElementById("dropdown_mob").classList.toggle("show_menu");
+  document.getElementById("burger_btn").classList.toggle("change");
+}
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function (event) {

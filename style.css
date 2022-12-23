@@ -165,7 +165,8 @@
       display: inline-block;
    }
    .dropdown_content{
-      display: none;
+      visibility: collapse;
+      opacity: 0;
       position: absolute;
       background-color: #f1f1f1;
       width: 264px;
@@ -177,10 +178,11 @@
 
       border: 3px solid #151212;
       border-radius: 0px 0px 8px 8px;
+      transition: all 0.5s;
    }
    .show {
-      display:block;
-      
+      visibility: visible;
+      opacity: 1;
    }
    .dropdown_content:hover
    {
@@ -314,7 +316,6 @@
   .slider_main_img{
    max-width: 1590px;
    width: 100%;
-   height: auto;
    border-radius: 16px;
    border: 1px solid;
    max-height: 567px;
@@ -1356,6 +1357,65 @@
       .slider_arrow_button {
          min-width: 70px;
       }
+      .body_pizza_banner {
+
+         margin-bottom: 4vw;
+      }
+      .drop_mob {
+         right: 0;
+         top: 110%;
+      }
+      .mobile_burger_btn{
+         width: 6vw;
+         height: 6vw;
+         display: flex;
+         
+         align-items: center;
+      }
+      .mobile_burger_btn span {
+         height: 10%;
+         width: 100%;
+         background-color: #000000;
+         border-radius: 3px;
+         transition: all 0.4s;
+         position: relative;
+      }
+      .mobile_burger_btn span::before {
+         top: 200%;
+         content: '';
+         position: absolute;
+         height: 100%;
+         width: 100%;
+         background-color: #000000;
+         border-radius: 3px;
+         transition: all 0.5s;
+         transition-delay: 0.1s;
+      }
+      .mobile_burger_btn span::after {
+         bottom: 200%;
+         content: '';
+         position: absolute;
+         height: 100%;
+         width: 100%;
+         background-color: #000000;
+         border-radius: 3px;
+         transition: all 0.5s;
+         transition-delay: 0.1s;
+      }
+      .change span::before {
+         transform: rotate(-135deg);
+         top: 0;
+      }
+      .change span::after {
+         transform: rotate(135deg);
+         bottom: 0;
+      }
+      .change span {
+         background-color: transparent;
+      }
+      .mob_burger {
+         display: none;
+      }
 
 /*
 @media (min-width: 1921px){}
@@ -1378,7 +1438,8 @@
 
       @media (max-width: 1800px) {
          .slider_main_img {
-            max-width: 1400px;
+            max-width: 80vw;
+            max-height: 500px;
          }
          .header_container {
             margin-left: 40px;
@@ -1387,7 +1448,8 @@
       }
       @media (max-width: 1700px) {
          .slider_main_img {
-            max-width: 1200px;
+            max-width: 80vw;
+            max-height: 428px;
          }
          .slider_arrow_button {
             min-width: 50px;
@@ -1465,6 +1527,72 @@
          }
       }
       @media (max-width: 1440px) {
+         .item_card_sneck {
+            max-width: unset;
+            width: 40%;
+            height: 54vw;
+            margin: 0;
+         }
+         
+         .item_card_pasta {
+            max-width: unset;
+            width: 40%;
+            height: 60vw;
+         }
+         .item_card_group {
+            gap: 2vw;
+         }
+         .item_card_ingrd {
+            font-size: 1.5vw;
+            line-height: 140%;
+         }
+         .item_card_title {
+            font-size: 2vw;
+         }
+         .item_card_price {
+            font-size: 2vw;
+         }
+         .items_card_group {
+            gap: 6vw;
+         }
+         .item_card {
+            max-width: unset;
+            width: 40%;
+            height: 60vw;
+         }
+         .items_card_group {
+            padding-top: 6vw;
+            padding-bottom: 10vw;
+         }
+         .slider_arrow_button {
+            width: 6vw;
+         }
+         .body_slider_points {
+            height: 8vw;
+            display: flex;
+            gap: 4vw;
+         }
+         .dot {
+            width: 2vw;
+            height: 2vw;
+         }
+         .body_slider {
+            margin-top: 6vw;
+            padding-bottom: 4vw;
+         }
+         .body_menu_content {
+            gap: 6vw;
+            justify-content: space-evenly;
+         }
+         .body_menu_link {
+            height: 30vw;
+            width: 30vw;
+         }
+
+         .slider_main_img {
+            max-width: 80vw;
+            max-height: 428px;
+         }
          .header_nav, .body_contacts h2 {
             font-size: 28px;
          }
@@ -1508,5 +1636,245 @@
          }
          .header_contact_line:last-of-type {
             width: fit-content;
+         }
+      }
+      @media (max-width: 1100px) {
+         .footer_imgs {
+            gap: 1vw;
+         }
+         .visa {
+            margin-left: 0;
+         }
+         .master_card {
+            margin-left: 0;
+         }
+         .google_pay {
+            margin-left: 0;
+            height: 60%;
+         }
+         .body_pizza_banner {
+            height: 30vw;
+         }
+         .footer_contact {
+            gap: 2vw;
+         }
+         ._thin {
+            height: 2vw;
+         }
+         .header_logo {
+            max-width: 14vw;
+         }
+         .header_container {
+            margin-left: 0;
+            margin-right: 0;
+         }
+         .header_shop_button {
+            margin-right: 0;
+         }
+         .body_menu_text {
+            font-size: 3vw;
+            line-height: 180%;
+         }
+         .body_menu 
+         {
+            padding: 8vw 0;
+         }
+         ._fat {
+            height: 8vw;
+         }
+         .horizontal_line span {
+            font-size: 3.5vw;
+         }
+      }
+      @media (max-width: 1000px){
+         .footer_imgs {
+            padding-top: 1vw;
+         }
+         .footer_imgs {
+            align-items: center;
+         }
+         .footer_contact_social_img {
+            width: 3vw;
+            height: 3vw;
+         }
+         .google_pay {
+            width: 16vw;
+            height: 4vw;
+            margin: 0;
+         }
+         .master_card {
+            display: flex;
+         }
+         .footer_imgs > a:first-of-type {
+            display: flex;
+            align-items: center;
+         }
+         .visa {
+            margin: 0;
+            display: flex;
+         }
+         .visa img {
+            height: 4vw;
+            width: 12vw;
+         }
+         .master_card img{
+            height: 5vw;
+            width: 8vw;
+         }
+         .footer_contact_line {
+            font-size: 2vw;
+            line-height: 150%;
+            font-weight: 200;
+         }
+         .body_footer {
+            padding: 1vw 0;
+         }
+         .footer_contact {
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+         }
+         .body_contact_social {
+            height: 5vw;
+            display: flex;
+            gap: 4vw;
+         }
+         .body_contact_social_img {
+            width: 5vw;
+            height: 5vw;
+         }
+         .link_img {
+            height: 5vw;
+            width: 5vw;
+         }
+         .link_img:first-child, .link_img:nth-child(2) {
+            margin: 0;
+         }
+         .main_link {
+            display: flex;
+            align-items: center;
+         }
+         .header_container {
+            max-height: 14vw;
+         }
+         .body_contacts {
+            gap: 2vw;
+            padding: 3vw 0;
+         }
+         ._first {
+            padding: 0;
+         }
+         ._second {
+            padding: 0;
+         }
+         ._third {
+            padding: 0;
+         }
+         .body_contact_social {
+            margin: 0;
+         }
+         .header_nav, .body_contacts h2 {
+            font-size: 3vw;
+            line-height: 150%;
+         }
+         .body_dilivery_list_item {
+            font-size: 3vw;
+            line-height: 160%;
+            
+         }
+         .body_dilivery_list {
+            margin-top: 4vw;
+         }
+         .body_delivery_title {
+            font-size: 4vw;
+            line-height: 150%;
+         }
+         .mob_burger {
+            display: flex;
+            position: relative;
+         }
+         .shop_count {
+            font-size: 3vw;
+         }
+         .shop_button_img {
+            height: 3vw;
+            width: 3vw;
+         }
+         .header_logo {
+            padding: 0;
+         }
+         .header_shop_button {
+            margin: 0;
+            width: 16vw;
+            height: 6vw;
+            border-radius: 2vw;
+            border: 1px solid #FF5722;;
+         }
+         .header_container {
+            min-height: unset;
+            align-items: center;
+         }
+         .background_container {
+            height: 16vw;
+         }
+         .body_delivery {
+            padding: 4vw;
+         }
+         .header_menu {
+            display: none;
+         }
+         .show_menu {
+            visibility: visible;
+            opacity: 1;
+         }
+      }
+      @media (max-width: 800px) {
+         .footer_imgs {
+            flex-wrap: wrap;
+            align-items: center;
+         }
+         .footer_contact_social {
+            flex: 1 1 100%;
+            justify-content: center;
+         }
+         .slider_arrow_button {
+            display: none;
+         }
+         .slider_main_img {
+            max-width: 100%;
+         }
+         .footer_imgs {
+            padding:0;
+         }
+         .footer_contact_social_img {
+            width: 4vw;
+            height: 4vw;
+         }
+         .body_footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         .body_footer ._container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 0;
+         }
+      }
+      @media (max-width: 600px) {
+         .footer_imgs {
+            gap: 15px;
+         }
+         
+         .footer_contact_line {
+            font-size: 3vw;
+         }
+         .footer_contact_social_img {
+            width: 5vw;
+            height: 5vw;
+         }
+         .footer_imgs {
+            padding: 0;
          }
       }
