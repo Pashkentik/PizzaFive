@@ -517,6 +517,11 @@
   ._third_img:hover{
    content:url(./img/social3_1.png);
   }
+  .buy_button_ogange:hover {
+   background-color: white;
+   box-shadow: none;
+   color: #FF5722;
+  }
   .body_contact_social{
    margin-left: 796px;
    margin-top: 22px;
@@ -717,6 +722,7 @@
 .item_card_title_sauce > .item_card_ingrd_popup{
    max-width: 372px;
 }
+
 .buy_button_ogange{
    align-self: center;
    max-width: 428px;
@@ -734,9 +740,7 @@
    font-size: 24px;
    line-height: 45px;
    color: #151212;
-}
-.buy_button_ogange:hover {
-   color: #fff;
+   transition: all 0.3s;
 }
 .popup_close_scroll {
    display: absolute;
@@ -988,6 +992,7 @@
       border-radius: 16px;
       background: url('./img/minus_black.png') no-repeat center;
       cursor: pointer;
+      transition: all 0.3s;
 
    }
    .popup_count_button:hover{
@@ -1066,6 +1071,7 @@
          background: url('./img/close_btn.png') no-repeat center;
          cursor: pointer;
          background-color: #FFCCBC;
+         transition: all 0.3s;
       }
       .close_btn:hover{
          background: url('./img/close_btn_white.png') no-repeat center;
@@ -1097,6 +1103,7 @@
          font-weight: 600;
          font-size: 24px;
          line-height: 45px;
+         transition: all 0.3s;
          
       }
       .count_item_group > div {
@@ -1176,6 +1183,10 @@
          font-size: 24px;
          line-height: 45px;
          padding: 0;
+         transition: all 0.3s;
+      }
+      .payment_payment label {
+         transition: all 0.3s;
       }
       .items_grop_in_payment input {
          background: #FFFFFF;
@@ -1684,6 +1695,29 @@
          }
          .header_contact_line:last-of-type {
             width: fit-content;
+         }
+         .pay_success_social > .body_contact_item {
+            font-size: 3vw;
+         }
+         .pay_success_greetings h3 {
+            font-size: 3vw;
+            line-height: 150%;
+         }
+         .pay_success_greetings h2 {
+            font-size: 7vw;
+         }
+         .pay_success_wrapper {
+            height: 80vw;
+            align-items: center;
+            padding: 4vw 0
+         }
+         .pay_success_greetings {
+            padding: 0;
+         }
+         .pay_success_wrapper > img {
+            right: 0;
+            width: 130%;
+            height: auto;
          }
       }
       @media (max-width: 1100px) {
